@@ -1,0 +1,98 @@
+@font-face{
+    font-family:'Raleway';
+    src:url('../fonts/Raleway-Regular');
+}
+body{
+    background:white
+    color #3f3f3f;
+    font:14px/28x;
+    font-family:'Raleway',arial;
+}
+
+h1{
+    font-size:52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.sectionHeader{
+    background:rgb(235, 196, 220);
+    height:60px;
+    color:#fff;
+    display:inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding:5px 40px;
+    letter-spacing:2px;
+    margin-bottom :20px;
+}
+
+
+
+
+.sectionArea{
+    padding:30px 0;
+}
+
+
+
+
+/*grid alanlarııı*/
+
+
+
+/*anasayfa alanları*/
+header.logo{
+    margin-right:auto;
+}
+header.logo img{
+    display:block;
+    height:70px;
+
+
+}
+.menu li {
+    float:left;
+}
+
+.menu li a{
+    padding :27px 17px;
+    display:block;
+    text-decoration :none;
+    letter-spacing: 2px;
+    color:rgb(120, 148, 155);
+    transition: all .5s ease;
+}
+.menu li:hover a{
+    background:rgb(235, 196, 220)
+    
+}
+#mainSlider{
+    height:800px;
+    background:url('///C:/Users/LENOVO/Desktop/isviçre/img/anasayfa.jpg') center center no-repeat;
+    background-size : cover;
+   
+}
+.slider{
+    width:100%;
+}
+
+
+
+.caption{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    justify-content:center;
+    width:100%;
+    color:#fff
+}
+
+#mainCaption{
+    height:400px;
+    background:rgba(0,0,0, .3);
+}
+
+
+
+
