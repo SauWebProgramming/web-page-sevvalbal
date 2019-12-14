@@ -13,6 +13,8 @@ h1{
     font-size:52px;
     letter-spacing: 4px;
     margin-bottom: 20px;
+    color:rgb(197, 203, 231) ;
+    text-align :center;
 }
 .sectionHeader{
     background:rgb(235, 196, 220);
@@ -38,6 +40,19 @@ h1{
 
 /*grid alanlarııı*/
 
+.container{
+    width:90%;
+    margin :0 auto;
+    display :flex;  /*bu bizim üçlü kısımları yan yana getiriyor*/
+
+}
+.featuresBody.container{
+    justify-content:space-between;
+}
+.col3{
+    flex-grow :1;
+    width:16.66%;
+}
 
 
 /*anasayfa alanları*/
@@ -74,6 +89,7 @@ header.logo img{
 }
 .slider{
     width:100%;
+    text-align: center;
 }
 
 
@@ -91,6 +107,69 @@ header.logo img{
 #mainCaption{
     height:400px;
     background:rgba(0,0,0, .3);
+}
+.featuresTop{
+    text-align :center;
+}
+
+.item{
+    padding:10px 20px;
+}
+
+
+
+.zoom{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    width :100%;
+    vertical-align:top;
+}
+
+.zoom img{
+    display:block;
+    widows: 100%;
+    height: auto;
+    transition: all .5s ease ;
+
+}
+
+
+.item .itemText{
+    text-align: center;
+    padding:5px;
+    border:1px solid rgb(235, 196, 220);
+}
+.item:hover .zoom img{
+    transform: scale(1.25);
+}
+
+
+.item :hover h3{
+    color:#fff;
+}
+
+
+.item:hover .itemText{
+    background:rgb(235, 196, 220);
+    color:#fff;
+    transition: all .5s ease;
+}
+
+.btnDetails{
+    color:rgb(235, 196, 220);
+    padding :5 px 10px;
+    text-decoration: none;
+    border:1px solid rgb(235, 196, 220);
+    transition: all .5s ease;
+}
+.item:hover .btnDetails{
+    color:#fff;
+    border: 1px solid #ffff;
+}
+
+.itemText p{
+    margin:20px 0;
 }
 
 
