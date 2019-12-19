@@ -298,3 +298,123 @@ footer p{
     
      
     }
+
+
+    
+#turlarSlider{
+    height:250px;
+    background:url('///C:/Users/LENOVO/Desktop/isviçre/img/turlarımız.jpg') center center no-repeat;
+    background-size : cover;
+   
+}
+
+
+
+#turlarCaption {
+    height:100px;
+
+}
+
+
+.inspectImage{
+    width: 40%;
+    padding-left: 200px;
+}
+
+.inspectImage img{
+    width: 100%;
+    height: auto;
+}
+
+.inspectText{
+    width: 60%;
+    padding-left:150px;
+    text-align: center;
+   
+}
+
+h4{
+    color: rgb(41, 37, 43);
+    font-size: 18px;
+    font-weight: bold;
+    padding:5px;
+
+}
+.inspectText a{
+    float: right;
+    text-decoration: none;
+    color: rgb(69, 57, 73);
+    font-weight: bold;
+}
+.inspectText a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.footerisim{
+position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(245, 231, 240);
+    color: rgb(53, 32, 42);
+    text-align: center;
+ padding:10px;
+
+ 
+}
+#matterhornSlider{
+    height:400px;
+    background:url('///C:/Users/LENOVO/Desktop/isviçre/img/matterhornh.jpg') center center no-repeat;
+    background-size : cover;
+   
+}
+
+
+
+#matterhornCaption {
+    height:100px;
+
+}
+
+.aw-zoom {
+    position: relative;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+
+}
+
+.aw-zoom:hover {
+    z-index:2 ;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.sectionHeadernew{
+background:rgb(235, 196, 220);
+height:50px;
+width:750px;
+color:#fff;
+display:inline-block;
+line-height: 50px;
+font-size: 24px;
+letter-spacing:2px;
+margin-bottom :20px;
+text-align: center;
+
+
+}
+.col4{
+    flex-grow :1;
+    width:16.66%;
+    background-color: rgb(245, 252, 248);
+}
