@@ -9,8 +9,10 @@
     <meta name "keywords" content="isviçre,tur,gezi,tatil">
     <meta name "viewport" content="width=device-width, initial-scale=1.0">
     <title>İsviçre'yi Geziyorum</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -29,13 +31,17 @@
                     <li><a href="galeri.html">GALERİ</a></li>
                     <li><a href="hakkımızda.html">HAKKIMIZDA</a></li>
                     <li><a href="iletisim.html">İLETİŞİM</a></li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="kaydol.html"><span class="glyphicon glyphicon-user"></span> Kaydol</a></li>
+                        <li><a href="giris.html"><span class="glyphicon glyphicon-log-in"></span> Giriş Yap</a></li>
+                    </ul>
                 </ul>
-            </div>
 
+
+
+            </div>
         </div>
     </header>
-
-
     <section id="mainSlider" class="slider">
         <div id="mainCaption" class="caption"></div>
         <h1>İSVİÇRE'Yİ KEŞFETMEYE VAR MISINIZ?</h1>
@@ -168,29 +174,49 @@
 
     </section>
 
-    <section id="features" class="sectionArea">
-        <div class="featuresTop">
-            <h2 class="sectionHeader">Sizden Gelenler</h2>
-        </div>
-        <div class="featuresBody">
-            <div class="container">
-                <div class="col1">
-                    <div class="item">
-                        <img src="img/gezi10.jpg" class="imageOver">
-                        <div class="itemText">
-                            <h3></h3>
-                            <p>Galerimize uğramayı unutmayın </p>
 
-                            <a href="galeri.html" class="buttonDetails">GALERİ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
+
+    <section id="features" class="sectionArea">
+        <div class="featuresTop1">
+            <h2 class="sectionHeadernew">Sizden Gelenler</h2>
+
         </div>
     </section>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/gezi5.jpg" style="width:70%">
+            <div class="text">17.05.2019</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/gezi4.jpg" style="width:70%">
+            <div class="text">11.06.2019</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/gezi10.jpg" style="width:70%" >
+            <div class="text">21.06.2019</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="butttoonn">
+        <a href="galeri.html" class="buttonDetails">Galeri</a>
+    </div>
+
+    </div>
+
+
 
     <footer class="sectionArea">
         <div class="container">
@@ -200,7 +226,7 @@
                     <a href="index.html"><img src="img/logo.jpg"></a>
 
                     <p>Hem İsviçre hakkında bilgi sahibi olmak hem de sitemize kaydolarak turlarımızdan haberdar olmak
-                        için doğru adrestesiniz.İsviçre'yi bizimle keşfetmenizden mutluluk duyarız.</p>
+                        için doğru adrestesiniz.İsviçre'yi bizimle keşfetmenizden gurur duyarız.</p>
                 </div>
             </div>
 
@@ -221,9 +247,9 @@
                     <div class="fa">
                         <h3>SOSYAL MEDYADA SİZLERLEYİZ</h3>
                         <ul class="socialLinks">
-                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook aw-zoom"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fa fa-twitter aw-zoom"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin aw-zoom"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -236,6 +262,7 @@
         </div>
     </footer>
 
+
     <div class="footerisim">
         <p>Şevval Bal</p>
         <p>B181200015</p>
@@ -243,15 +270,27 @@
 
 
     </div>
-   
 
-
-
-
-
-
-
-
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
 </body>
 
 </html>
